@@ -1,0 +1,39 @@
+.todo-list-container {
+  width: 400px;
+  text-align: center;
+  padding: 10px 30px;
+  margin: 30px auto;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #e1680c;
+
+  header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #ada7a7;
+    .ant-btn {
+      font-size: 12px;
+      padding: 4px;
+    }
+    .num {
+      font-weight: bold;
+      color: #757474;
+    }
+  }
+}

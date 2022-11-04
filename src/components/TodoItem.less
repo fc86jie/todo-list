@@ -1,0 +1,26 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: solid 1px #dadada;
+  padding: 10px 0;
+  &.completed {
+    color: #dadada;
+    text-decoration: line-through;
+  }
+  .left-ct {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    .item-text {
+      flex: 1;
+      margin-left: 6px;
+      text-align: left;
+      word-break: break-all;
+    }
+  }
+  .item-del {
+    color: #aaaaaa;
+    margin-top: 3px;
+  }
+}
